@@ -24,10 +24,6 @@ wrapped_number = new_number.map do |n|
   n > 26 ? ((n - 1) % 26) + 1 : n
 end
 
-#p wrapped_number
-
-
-
 caesar = wrapped_number.map do |str|
   key = alphabet.key(str)
   key ? key.to_s : "nil"
