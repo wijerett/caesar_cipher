@@ -18,7 +18,7 @@ numbers = input.chars.map do |char|
   alphabet[char]
 end.compact
 
-new_number = numbers.map.each { |num| num + input1 } #may need to change to using shift
+new_number = numbers.map.each { |num| num + input1 }
 #p new_number
 wrapped_number = new_number.map do |n|
   n > 26 ? ((n - 1) % 26) + 1 : n
